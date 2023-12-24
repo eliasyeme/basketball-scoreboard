@@ -1,3 +1,9 @@
+@font-face {
+    font-family: lcd14;
+    src: url('../fonts/lcd-font-master/LCD14.otf');
+    /* src: url('../fonts/cursed-timer-ulil-font/CursedTimerUlil-Aznm.ttf') */
+}
+
 body {
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -21,6 +27,7 @@ h3, p {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 .score-title {
@@ -30,7 +37,7 @@ h3, p {
 
 .score-number {
     background: #064E3B;
-    padding: 0 48px;;
+    width: 155px;;
     border-radius: 5px;
     margin: 20px 0;
 }
@@ -38,12 +45,23 @@ h3, p {
 .score-number-text {
     color: #10B981;
     font-size: 90px;
+    font-family: lcd14;
+    padding-top: 16px;
 }
 
 .score-btn {
     padding: 10px;
+    padding-top: 12px;
     background: transparent;
     color: #BAE6FD;
     border: 2px solid #BAE6FD;;
     border-radius: 5px;
+    font-family: lcd14;
+    font-size: 18px;
+}
+
+.score-btn:hover {
+    cursor: pointer;
+    background: #BAE6FD;
+    color: #064E3B;
 }
