@@ -1,8 +1,67 @@
+@font-face {
+    font-family: lcd14;
+    src: url('../fonts/lcd-font-master/LCD14.otf');
+    /* src: url('../fonts/cursed-timer-ulil-font/CursedTimerUlil-Aznm.ttf') */
+}
+
 body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h3, p {
     margin: 0;
 }
 
 .container {
     display: flex;
     justify-content: space-around;
+    max-width: 575px;
+    background: #059669;
+    margin: 64px auto;
+    border-radius: 10px;
+    padding: 52px 0;
+}
+
+.score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.score-title {
+    color: #6EE7B7;
+    font-size: 40px;
+}
+
+.score-number {
+    background: #064E3B;
+    width: 155px;;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.score-number-text {
+    color: #10B981;
+    font-size: 90px;
+    font-family: lcd14;
+    padding-top: 16px;
+}
+
+.score-btn {
+    padding: 10px;
+    padding-top: 12px;
+    background: transparent;
+    color: #BAE6FD;
+    border: 2px solid #BAE6FD;;
+    border-radius: 5px;
+    font-family: lcd14;
+    font-size: 18px;
+}
+
+.score-btn:hover {
+    cursor: pointer;
+    background: #BAE6FD;
+    color: #064E3B;
 }
